@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 0.5rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  width: 90%;
+  color: #fff;
+}
+p {
+  font-size: 1.6rem;
+  width: 70%;
+  margin: 0.5rem 0;
+}
+.info p {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+.show-case {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("netflix.jpg") no-repeat center center/cover;
+}
+.show-case::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 10px 80px 250px #000000;
+}
+.show-case-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+.show-case-top img {
+  width: 170px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -10%);
+}
+.show-case-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -10%);
+}
+.show-case-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  margin-top: 9rem;
+}
+.show-case-content h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+  text-transform: capitalize;
+}
+.show-case-content p {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+}
+/*buttons*/
+.btn {
+  display: inline;
+  background: red;
+  color: white;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-rounded {
+  border-radius: 5px;
+}
+.btn-xl {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+/* tv */
+.tv .text .btn-lg {
+  background: transparent;
+  border: solid 1px white;
+}
+.tv {
+  width: 100%;
+  height: 70vh;
+  border-top: 7px solid rgb(48, 45, 45);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tv .text {
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: capitalize;
+  margin: auto 0;
+  margin-left: 40px;
+}
+.tv .text h1,
+p {
+  padding-bottom: 20px;
+}
+.tv img {
+  margin: auto 0;
+  width: 30%;
+  height: 70%;
+}
+.FAQ {
+  width: 100%;
+  margin-bottom: 200px;
+  border-top: 7px solid rgb(48, 45, 45);
+}
+
+.FAQ .components li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border: 1px solid rgb(48, 45, 45);
+  width: 800px;
+  color: white;
+  background: rgb(48, 45, 45);
+  padding: 20px 30px;
+  margin: auto;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.FAQ .components .btn-xl {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+.FAQ h1 {
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0;
+}
+/* faq contents initially*/
+.about {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+/*info */
+.info {
+  width: 100%;
+  height: 50vh;
+  border-top: 7px solid rgb(48, 45, 45);
+}
+.info .text a {
+  color: gray;
+}
+.info .text {
+  margin: 0 auto;
+  padding: 10px;
+  width: 60%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.info .text li {
+  padding: 5px 0;
+}
+.info p {
+  padding: 0 350px;
+  padding-top: 40px;
+  text-transform: capitalize;
+}
+.info .text li:hover {
+  opacity: 0.9;
+}
+/*about*/
+.about {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  border: 1px solid rgb(48, 45, 45);
+  width: 800px;
+  color: white;
+  background: rgb(48, 45, 45);
+  padding: 20px 30px;
+  margin: 0 auto;
+  border-top: 1px solid #000000;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 960px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 2rem;
+    width: 90%;
+    color: #fff;
+  }
+  p {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .show-case {
+    width: 100%;
+    height: 90vh;
+  }
+  .show-case-content h1 {
+    font-size: 2.5rem;
+  }
+  .show-case-top img {
+    width: 25%;
+    margin-left: 40px;
+  }
+  .show-case .btn-xl {
+    font-size: 1.6rem;
+  }
+  .tv {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 3fr;
+  }
+  #rev .a {
+    grid-row: 2;
+  }
+  .tv img {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .tv .text {
+    margin: 20px 20px;
+  }
+  .tv p {
+    width: 100%;
+  }
+  .FAQ {
+    width: 100%;
+  }
+  .FAQ .components li {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .FAQ h1 {
+    font-size: 1.6rem;
+  }
+  .FAQ .components p {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .FAQ .components .btn-xl {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30%;
+  }
+  .info .text {
+    width: 100%;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    justify-content: center;
+    margin-left: 60px;
+  }
+  .info p {
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
