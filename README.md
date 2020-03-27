@@ -1,4 +1,4 @@
 # Netflix-clone-landing-page-
 A clone of Netflix's landing page
-using html(with flexbox and grid),css and javascript.
+using html,css (with flexbox and grid) and javascript.
 No additional frameworks used.
